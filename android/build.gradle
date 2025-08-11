@@ -26,6 +26,8 @@ subprojects {
     configurations.all {
         resolutionStrategy {
             force "androidx.lifecycle:lifecycle-livedata:2.5.1" // 强制所有模块使用 2.5.1
+            force "androidx.lifecycle:lifecycle-viewmodel:2.5.1" // 强制所有模块使用 2.5.1
+            force "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1" // 强制所有模块使用 2.5.1
         }
     }
 }
