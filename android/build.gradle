@@ -22,6 +22,14 @@ allprojects {
     }
 }
 
+subprojects {
+    configurations.all {
+        resolutionStrategy {
+            force "androidx.lifecycle:lifecycle-livedata:2.5.1" // 强制所有模块使用 2.5.1
+        }
+    }
+}
+
 rootProject.buildDir = '../build'
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
