@@ -161,6 +161,7 @@ dependencies:
 
 dependency_overrides:
   uuid: 4.4.2
+  flutter_spinkit: 5.2.1
 
 dev_dependencies:
   flutter_test:
