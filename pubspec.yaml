@@ -1,0 +1,379 @@
+name: desk_cloud
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by a + and a build number, like 1.2.43+1.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.1.33+124
+
+environment:
+  sdk: ">=3.0.3 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+tencent_kit:
+  app_id: "102352379"
+  # universal_link: https://${your applinks domain}/universal_link/${example_app}/qq_conn/102352379/ # 可选项目
+  universal_link: https://web.diskyun.com/apple-app-site-association/ # 可选项目
+wechat_kit:
+  ios: no_pay
+  app_id: wx38cd8f1f24d82458
+  # universal_link: https://${your applinks domain}/universal_link/${example_app}/wechat/
+  universal_link: https://web.diskyun.com/apple-app-site-association
+#alipay_kit:
+#  scheme: "alipay_disk"
+
+dependencies:
+  flutter_localizations:
+    sdk: flutter
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  dio: 5.3.2
+  get: 4.7.2
+  flutter_screenutil: 5.9.3
+  common_utils: 2.1.0
+  sp_util: 2.0.3
+  package_info: any
+  fluttertoast: 8.2.2
+  flutter_easyloading: 3.0.5
+  cached_network_image: 3.4.1
+  # flutter_cache_manager: 3.4.1
+  pull_to_refresh: 2.0.0
+  path_provider: 2.1.4
+  # permission_handler: 10.4.3
+  permission_handler: 11.0.1
+  tobias: ^3.2.0
+  scroll_to_index: 3.0.1
+  url_launcher: 6.3.1
+  url_launcher_ios: 6.3.2
+  logging: ^1.2.0
+  talker_dio_logger: 2.3.0
+  wechat_assets_picker: 9.5.0
+  wechat_camera_picker: 4.3.7
+  photo_view: ^0.14.0
+  image_gallery_saver: 2.0.3
+  crypto: 3.0.3
+  logger: ^2.5.0
+  hex: 0.2.0
+  flutter_staggered_grid_view: ^0.7.0
+  crop_image: 1.0.13
+  custom_pop_up_menu: ^1.2.3+1
+  realm: ^3.0.0
+  scrollview_observer: 1.14.0
+  in_app_purchase: 3.1.13
+  assets_audio_player: ^3.1.1
+  #  audioplayers: 6.2.0
+  flutter_image_compress: ^2.3.0
+  jverify: 3.0.6 #极光认证
+  sprintf: any
+  pinput: ^5.0.0
+  pointycastle: ^3.7.3
+  encrypt: ^5.0.1
+  flutter_oss_aliyun: ^6.4.2
+  # better_player: ^0.0.83
+  # better_player:
+  #   git:
+  #     url: https://github.com/tintran-dev/betterplayer.git
+  # wechat_kit: ^6.0.1
+  tencent_kit: ^6.0.1
+  weibo_kit: ^4.0.0
+#  alipay_kit: 6.0.0
+  r_upgrade: ^0.4.2
+  # device_info_plus: 9.0.0
+  mime: ^1.0.3
+  lottie: 2.6.0
+  video_player: ^2.7.2
+  # 腾讯TBS 文件预览服务
+  file_preview: ^1.2.0
+  # log_show:
+  #   git: https://gitee.com/payneg/log_show.git
+  flutter_origin_resources:
+    # git:
+    #   url: https://gitee.com/payneg/flutter_origin_resources.git
+    #   ref: 1.0.1
+    path: plugin/flutter_origin_resources
+  # flutter_client_oss:
+  #   git:
+  #     url: https://gitee.com/payneg/flutter_oss_client.git
+  #     ref: '1.2'
+  flutter_client_oss:
+    # git: https://gitee.com/xiejibiao/flutter_oss_client.git
+    path: plugin/flutter_oss_client-master
+  fl_market:
+    # git: https://gitee.com/payneg/fl_market.git
+    path: plugin/fl_market-master
+  gp_utils:
+    path: plugin/gp_utils-master
+  # photo_gallery:
+  #   git: https://gitee.com/xiejibiao/photo_gallery.git
+  #   path: plugin/photo_gallery-master
+  photo_gallery:
+    path: plugin/photo_gallery
+  flutter_cached_pdfview: ^0.4.3
+  fluwx: 5.0.3
+  share_plus: 10.0.2
+  file_picker: 5.2.11
+  connectivity_plus: 5.0.2
+  flutter_native_splash: ^2.3.0
+  app_install_date: 0.1.2
+  flutter_bugly: ^0.4.4
+  gradient_borders: ^1.0.1
+  # md5_file_checksum: ^1.0.5
+  md5_file_checksum:
+    # git: https://gitee.com/xiejibiao/md5_file_checksum.git
+    path: plugin/md5_file_checksum-master
+  android_intent_plus: ^5.2.1
+  fijkplayer: ^0.11.0
+  auto_orientation: ^2.3.1
+  open_filex: ^4.6.0
+  webview_flutter: ^4.5.0
+  socket_io_client: ^1.0.2
+  flutter_local_notifications: ^17.2.4
+  share_handler: ^0.0.22
+  # photo_manager: ^3.0.0
+  flutter_blue_plus: ^1.34.5 # 用于蓝牙功能
+  battery_plus: ^4.0.0 # 用于电池状态
+  wifi_scan: ^0.4.0+1 # 用于WiFi扫描
+  unrar:
+    path: plugin/unrar
+  shared_preferences: ^2.3.3
+
+dependency_overrides:
+  uuid: 4.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  color: "#ffffff" # 启动画面的背景颜色
+  image: assets/launch_image.png # 启动画面图像路径（放在 assets 文件夹中）
+  android: false # 为 Android 配置启动画面
+  ios: true # 为 iOS 配置启动画面
+  android_gravity: center # Android 启动画面图像居中
+  ios_content_mode: scaleAspectFill # iOS 启动画面图像按比例缩放
+  # fullscreen: false
+  android_12:
+    image: assets/launch_image.png # 启动画面图像路径（放在 assets 文件夹中）
+    android_gravity: fill # Android 启动画面图像居中
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  fonts:
+    - family: squadaone
+      fonts:
+        - asset: assets/fonts/squadaone-aorm.ttf
+    - family: oppos
+      fonts:
+        - asset: assets/fonts/OPPOSans-H.ttf
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    # assets-generator-begin
+    # assets/*
+    - assets/sort_blue.png
+    - assets/member_equity_5.png
+    - assets/member_top_bg2.png
+    - assets/type_audio.png
+    - assets/member_equity_4.png
+    - assets/io_pause.png
+    - assets/type_word.png
+    - assets/type_ppt.png
+    - assets/member_equity_6.png
+    - assets/member_top_bg.png
+    - assets/add_dir.png
+    - assets/ic_command_add.png
+    - assets/tab_command_y.png
+    - assets/tab_command_n.png
+    - assets/member_equity_7.png
+    - assets/check_auto_renewal_y.png
+    - assets/member_equity_3.png
+    - assets/home_top_bg.png
+    - assets/option_rename.png
+    - assets/ic_reduction.png
+    - assets/file_add.png
+    - assets/member_equity_2.png
+    - assets/type_excel.png
+    - assets/member_name.png
+    - assets/member_equity_0.png
+    - assets/type_pdf.png
+    - assets/ic_close.png
+    - assets/member_equity_1.png
+    - assets/ic_default.png
+    - assets/empty.png
+    - assets/ic_pay_wechat.png
+    - assets/ic_add.png
+    - assets/file.png
+    - assets/nav_back.png
+    - assets/check_round_n.png
+    - assets/check_round_y.png
+    - assets/option_move.png
+    - assets/member_delete.png
+    - assets/io_vip.png
+    - assets/type_unknown.png
+    - assets/file_search.png
+    - assets/check_square_n.png
+    - assets/check_square_y.png
+    - assets/type_txt.png
+    - assets/ic_clear.png
+    - assets/ic_more.png
+    - assets/io_flash.png
+    - assets/file_sort.png
+    - assets/ic_next.png
+    - assets/search_clear.png
+    - assets/home_nav_add.png
+    - assets/type_dir_zip.png
+    - assets/logo.png
+    - assets/member_settings.png
+    - assets/ic_reduction_del.png
+    - assets/dialog_close.png
+    - assets/option_delete.png
+    - assets/tab_io_n.png
+    - assets/ic_pay_ali.png
+    - assets/tab_io_y.png
+    - assets/video.png
+    - assets/ic_back.png
+    - assets/member_vip.png
+    - assets/type_dir.png
+    - assets/io_play.png
+    - assets/type_zip.png
+    - assets/option_unzip.png
+    - assets/option_save.png
+    - assets/ic_warning.png
+    - assets/ic_del.png
+    - assets/home_vip_tag.png
+    - assets/option_detail.png
+    - assets/home_top_name.png
+    - assets/ic_log_off.png
+    - assets/ic_pay_apple.png
+    - assets/tab_file_y.png
+    - assets/tab_member_y.png
+    - assets/tab_file_n.png
+    - assets/tab_member_n.png
+    - assets/option_restore.png
+    - assets/member_equity_9.png
+    - assets/option_share.png
+    - assets/image.png
+    - assets/option_download.png
+    - assets/io_reset.png
+    - assets/member_equity_8.png
+    - assets/ic_drop_down.png
+    - assets/ic_down.png
+    - assets/ic_allow.png
+    - assets/img_tanchuang.png
+    - assets/ic_close_dialog.png
+    - assets/img_zi.png
+    - assets/fx_vip_hongbao.json
+    - assets/ic_jinbao.png
+    - assets/ic_qx_xc.png
+    - assets/ic_open_member_bg.png
+    - assets/ic_photo_check_all_round_n.png
+    - assets/ic_photo_check_round_n.png
+    - assets/launch_image.png
+    - assets/img_vip_bg.png
+    - assets/img_vip_banner.png
+    - assets/img_vip_discount.png
+    - assets/ic_jian.png
+    - assets/open_member_discount_bg.png
+    - assets/ic_command_search.png
+    - assets/ic_next_m.png
+    - assets/ic_service.png
+    - assets/ic_song.png
+    - assets/ic_service_quick.png
+    - assets/ic_faq.png
+    - assets/ic_first_pay.png
+    - assets/auto_renewal_bg.png
+    - assets/ic_search.png
+    - assets/ic_wait.png
+    - assets/option_other.png
+    # assets/add/*
+    - assets/add/file.png
+    - assets/add/video.png
+    - assets/add/image.png
+    # assets/other/*
+    - assets/other/config.json
+    - assets/other/test_env_pri.pem
+    - assets/other/test_en_pub.pem
+    # assets/share/*
+    - assets/share/space.png
+    - assets/share/link.png
+    - assets/share/weibo.png
+    - assets/share/arrow.png
+    - assets/share/friend.png
+    - assets/share/qq.png
+    - assets/share/wechat.png
+    - assets/share/copy.png
+    # assets/upload/*
+    - assets/upload/document.png
+    - assets/upload/dir.png
+    - assets/upload/arrow.png
+    - assets/upload/video.png
+    - assets/upload/image.png
+  # assets-generator-end
+
+tobias:
+  url_scheme: tobiasdeskCloud
+  ios:
+    ignore_security: true
+    universal_link: https://xxkj.com.payne.deskCloud
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

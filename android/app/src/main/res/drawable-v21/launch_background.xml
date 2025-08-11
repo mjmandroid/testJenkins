@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+     <!-- 添加蓝色背景 -->
+    <item>
+        <color android:color="#ffffff"/>
+    </item>
+    <!-- 居中显示启动图 -->
+    <!-- <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/launch_image" />
+    </item> -->
+    <item android:top="176dp">
+        <bitmap android:gravity="top|center_horizontal" android:src="@drawable/launch_slogan" android:width="222dp" android:height="215dp"/>
+    </item>
+    <item android:bottom="67dp">
+        <bitmap android:gravity="bottom|center_horizontal" android:src="@drawable/launch_logo_name" android:width="150dp" android:height="34dp"/>
+    </item>
+</layer-list>

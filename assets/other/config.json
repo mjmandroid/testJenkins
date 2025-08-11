@@ -1,0 +1,36 @@
+{
+  "ios": {
+    "com.payne.disk.cloud": {
+      "appName": "快兔网盘",
+      "appNameEn": "disk",
+      "universalLink": "https://93t7qn.xinstall.com.cn/tolink/",
+      "ossHost": "https://xingda-images.oss-cn-shenzhen.aliyuncs.com/app",
+      "ossDir": "study",
+      "userLink": "PuXingUserServiceAgreement",
+      "renewLink": "PuXingMemberAutomaticRenewalServiceAgreement",
+      "privacyLink": "PuXingPrivacyPolicy",
+      "memberLink": "PuXingMemberServiceAgreement",
+      "buyLink": "PuXingPurchaseAgreement",
+      "createLink": "PuXingCreationSpecifications",
+      "jpushId": "6d78c94216366b82b2a3a9ad",
+      "wxchatId": "wx06393093910f24b7"
+    }
+  },
+  "android": {
+    "com.payne.disk.cloud": {
+      "appName": "快兔网盘",
+      "appNameEn": "disk",
+      "universalLink": "https://93t7qn.xinstall.com.cn/tolink/",
+      "ossHost": "https://xingda-images.oss-cn-shenzhen.aliyuncs.com/app",
+      "ossDir": "study",
+      "userLink": "PuXingUserServiceAgreement",
+      "renewLink": "PuXingMemberAutomaticRenewalServiceAgreement",
+      "privacyLink": "PuXingPrivacyPolicy",
+      "memberLink": "PuXingMemberServiceAgreement",
+      "buyLink": "PuXingPurchaseAgreement",
+      "createLink": "PuXingCreationSpecifications",
+      "jpushId": "6d78c94216366b82b2a3a9ad",
+      "wxchatId": "wx06393093910f24b7"
+    }
+  }
+}

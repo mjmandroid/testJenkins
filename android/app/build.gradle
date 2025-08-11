@@ -1,0 +1,180 @@
+import java.text.SimpleDateFormat
+import org.gradle.api.GradleException
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+android {
+    namespace "com.payne.desk_cloud"
+    compileSdkVersion flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    def app = new ConfigApp()
+
+    signingConfigs {
+        debug {
+            keyAlias app.keyAlias
+            keyPassword app.keyPassword
+            storeFile file(app.storeFile)
+            storePassword app.storePassword
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            keyAlias app.keyAlias
+            keyPassword app.keyPassword
+            storeFile file(app.storeFile)
+            storePassword app.storePassword
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    defaultConfig {
+        applicationId app.myApplicationId
+        minSdkVersion 21
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME   : app.myApplicationId,
+                JPUSH_APPKEY    : "${app.jpushKey}",
+                JPUSH_CHANNEL   : "official",
+                app_debug       : app.isDebug ? "1" : "0",
+                NAME_EN         : "${app.nameEn}",
+                MY_PACKAGE      : app.myApplicationId,
+                MY_LABEL        : "${app.name}",
+                KAWA_CHANNEL    :"${getChannel2()}",
+                SCHEME          : "${app.scheme}"
+        ]
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+            // abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (ConfigApp.myApplicationId == "com.payne.disk.cloud"){
+                res.srcDirs += "src/main/res_disk"
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${app.nameEn}_" +
+                    "${defaultConfig.versionName}_" +
+                    "${app.isDebug ? "beta_" : ""}" +
+                    "${getChannel2()}_" +
+                    "${getTime()}" +
+                    ".apk"
+        }
+    }
+}
+dependencies {
+    // 此处以JPush 5.6.0 版本为例，注意：从 5.0.0 版本开始可以自动拉取 JCore 包，无需另外配置
+    implementation 'cn.jiguang.sdk:jcore:5.0.0'
+}
+flutter {
+    source '../..'
+}
+
+static def getTime() {
+    def df = new SimpleDateFormat("HHmm")
+    df.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"))
+    return df.format(new Date())
+}
+
+static def getChannel2() {
+    def channel = "GF_KW"//默认渠道号
+    return channel
+}
+
+class ConfigApp {
+    // def isDebug = true//测试=true，正式=false
+    def isDebug = false//测试=true，正式=false
+
+    static def myApplicationId = "com.payne.disk.cloud"
+    def name = getValueByKey('app_name')
+    def nameEn = getValueByKey('app_name_en')
+    def keyAlias = getValueByKey('keyAlias')
+    def keyPassword = getValueByKey('keyPassword')
+    def storeFile = getValueByKey('storeFile')
+    def storePassword = getValueByKey('storePassword')
+    def jpushKey = getValueByKey('jpush_key')
+    def scheme = getValueByKey('scheme')
+
+    private def getValueByKey(String key) {
+        Map<String, Map> appConfig = [
+                "com.payne.disk.cloud"    : [
+                        app_name        : isDebug ? "快兔网盘Beta" : "快兔网盘",
+                        app_name_en     : "disk",
+                        keyAlias        : 'disk',
+                        keyPassword     : 'Disk#2024',
+                        storeFile       : 'disk.jks',
+                        storePassword   : 'Disk@2024',
+                        jpush_key       : "6d78c94216366b82b2a3a9ad",
+                        scheme          : "diskcloud"
+                ]
+        ]
+        def value = ""
+        appConfig.each { entry ->
+            if (myApplicationId == entry.key) {
+                entry.value.each { entry1 ->
+                    if (entry1.key == key) {
+                        value = entry1.value
+                    }
+                }
+            }
+        }
+        return value
+    }
+}

@@ -1,0 +1,455 @@
+PODS:
+  - AliyunOSSiOS (2.11.1)
+  - app_install_date (0.0.1):
+    - Flutter
+  - assets_audio_player (0.0.1):
+    - Flutter
+  - assets_audio_player_web (0.0.1):
+    - Flutter
+  - auto_orientation (0.0.1):
+    - Flutter
+  - battery_plus (1.0.0):
+    - Flutter
+  - BIJKPlayer (0.7.16)
+  - Bugly (2.6.1)
+  - camera_avfoundation (0.0.1):
+    - Flutter
+  - connectivity_plus (0.0.1):
+    - Flutter
+    - ReachabilitySwift
+  - DKImagePickerController/Core (4.3.9):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.3.9)
+  - DKImagePickerController/PhotoGallery (4.3.9):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.3.9)
+  - DKPhotoGallery (0.0.19):
+    - DKPhotoGallery/Core (= 0.0.19)
+    - DKPhotoGallery/Model (= 0.0.19)
+    - DKPhotoGallery/Preview (= 0.0.19)
+    - DKPhotoGallery/Resource (= 0.0.19)
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Core (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Model (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Preview (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Resource (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - fijkplayer (0.11.0):
+    - BIJKPlayer (~> 0.7.16)
+    - Flutter
+  - file_picker (0.0.1):
+    - DKImagePickerController/PhotoGallery
+    - Flutter
+  - file_preview (0.0.1):
+    - Flutter
+  - fl_market (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_blue_plus_darwin (0.0.2):
+    - Flutter
+    - FlutterMacOS
+  - flutter_bugly (0.0.1):
+    - Bugly
+    - Flutter
+  - flutter_client_oss (0.0.1):
+    - AliyunOSSiOS
+    - Flutter
+  - flutter_image_compress_common (1.0.0):
+    - Flutter
+    - Mantle
+    - SDWebImage
+    - SDWebImageWebPCoder
+  - flutter_local_notifications (0.0.1):
+    - Flutter
+  - flutter_native_splash (0.0.1):
+    - Flutter
+  - flutter_origin_resources (0.0.1):
+    - Flutter
+  - flutter_pdfview (1.0.2):
+    - Flutter
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - fluwx (0.0.1):
+    - Flutter
+    - fluwx/pay (= 0.0.1)
+  - fluwx/pay (0.0.1):
+    - Flutter
+    - WechatOpenSDK-XCFramework (~> 2.0.4)
+  - gp_utils (0.0.1):
+    - Flutter
+    - KeychainAccess
+  - image_gallery_saver (2.0.2):
+    - Flutter
+  - in_app_purchase_storekit (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - JCore (5.1.0)
+  - JVerification (3.2.7):
+    - JCore (>= 2.1.6)
+  - jverify (0.0.1):
+    - Flutter
+    - JCore (>= 5.0.1)
+    - JVerification (= 3.2.7)
+  - KeychainAccess (4.2.2)
+  - libwebp (1.5.0):
+    - libwebp/demux (= 1.5.0)
+    - libwebp/mux (= 1.5.0)
+    - libwebp/sharpyuv (= 1.5.0)
+    - libwebp/webp (= 1.5.0)
+  - libwebp/demux (1.5.0):
+    - libwebp/webp
+  - libwebp/mux (1.5.0):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.5.0)
+  - libwebp/webp (1.5.0):
+    - libwebp/sharpyuv
+  - Mantle (2.2.0):
+    - Mantle/extobjc (= 2.2.0)
+  - Mantle/extobjc (2.2.0)
+  - md5_file_checksum (1.0.3):
+    - Flutter
+  - open_filex (0.0.2):
+    - Flutter
+  - package_info (0.0.1):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.1.1):
+    - Flutter
+  - photo_gallery (0.0.1):
+    - Flutter
+  - photo_manager (3.7.1):
+    - Flutter
+    - FlutterMacOS
+  - r_upgrade (0.0.1):
+    - Flutter
+  - ReachabilitySwift (5.2.4)
+  - realm (3.4.2):
+    - Flutter
+  - SDWebImage (5.21.1):
+    - SDWebImage/Core (= 5.21.1)
+  - SDWebImage/Core (5.21.1)
+  - SDWebImageWebPCoder (0.14.6):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.17)
+  - sensors_plus (0.0.1):
+    - Flutter
+  - share_handler_ios (0.0.14):
+    - Flutter
+    - share_handler_ios/share_handler_ios_models (= 0.0.14)
+    - share_handler_ios_models
+  - share_handler_ios/share_handler_ios_models (0.0.14):
+    - Flutter
+    - share_handler_ios_models
+  - share_handler_ios_models (0.0.9)
+  - share_plus (0.0.1):
+    - Flutter
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - sqflite (0.0.3):
+    - Flutter
+    - FlutterMacOS
+  - SwiftyGif (5.4.5)
+  - tencent_kit (6.2.0):
+    - Flutter
+    - tencent_kit/vendor (= 6.2.0)
+  - tencent_kit/vendor (6.2.0):
+    - Flutter
+  - Toast (4.1.1)
+  - tobias (0.0.1):
+    - Flutter
+    - tobias/normal (= 0.0.1)
+  - tobias/normal (0.0.1):
+    - Flutter
+  - unrar (0.0.1):
+    - Flutter
+    - UnrarKit
+    - UnzipKit
+  - UnrarKit (2.10):
+    - UnrarKit/unrar-lib (= 2.10)
+  - UnrarKit/unrar-lib (2.10)
+  - UnzipKit (1.9):
+    - UnzipKit/minizip-lib (= 1.9)
+  - UnzipKit/minizip-lib (1.9)
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - video_player_avfoundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
+  - WechatOpenSDK-XCFramework (2.0.4)
+  - weibo_kit (4.0.0):
+    - Flutter
+    - weibo_kit/vendor (= 4.0.0)
+  - weibo_kit/vendor (4.0.0):
+    - Flutter
+    - Weibo_SDK (~> 3.3.0)
+  - Weibo_SDK (3.3.0)
+  - wifi_scan (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - app_install_date (from `.symlinks/plugins/app_install_date/ios`)
+  - assets_audio_player (from `.symlinks/plugins/assets_audio_player/ios`)
+  - assets_audio_player_web (from `.symlinks/plugins/assets_audio_player_web/ios`)
+  - auto_orientation (from `.symlinks/plugins/auto_orientation/ios`)
+  - battery_plus (from `.symlinks/plugins/battery_plus/ios`)
+  - camera_avfoundation (from `.symlinks/plugins/camera_avfoundation/ios`)
+  - connectivity_plus (from `.symlinks/plugins/connectivity_plus/ios`)
+  - fijkplayer (from `.symlinks/plugins/fijkplayer/ios`)
+  - file_picker (from `.symlinks/plugins/file_picker/ios`)
+  - file_preview (from `.symlinks/plugins/file_preview/ios`)
+  - fl_market (from `.symlinks/plugins/fl_market/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_blue_plus_darwin (from `.symlinks/plugins/flutter_blue_plus_darwin/darwin`)
+  - flutter_bugly (from `.symlinks/plugins/flutter_bugly/ios`)
+  - flutter_client_oss (from `.symlinks/plugins/flutter_client_oss/ios`)
+  - flutter_image_compress_common (from `.symlinks/plugins/flutter_image_compress_common/ios`)
+  - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
+  - flutter_native_splash (from `.symlinks/plugins/flutter_native_splash/ios`)
+  - flutter_origin_resources (from `.symlinks/plugins/flutter_origin_resources/ios`)
+  - flutter_pdfview (from `.symlinks/plugins/flutter_pdfview/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - fluwx (from `.symlinks/plugins/fluwx/ios`)
+  - gp_utils (from `.symlinks/plugins/gp_utils/ios`)
+  - image_gallery_saver (from `.symlinks/plugins/image_gallery_saver/ios`)
+  - in_app_purchase_storekit (from `.symlinks/plugins/in_app_purchase_storekit/darwin`)
+  - jverify (from `.symlinks/plugins/jverify/ios`)
+  - md5_file_checksum (from `.symlinks/plugins/md5_file_checksum/ios`)
+  - open_filex (from `.symlinks/plugins/open_filex/ios`)
+  - package_info (from `.symlinks/plugins/package_info/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - photo_gallery (from `.symlinks/plugins/photo_gallery/ios`)
+  - photo_manager (from `.symlinks/plugins/photo_manager/ios`)
+  - r_upgrade (from `.symlinks/plugins/r_upgrade/ios`)
+  - realm (from `.symlinks/plugins/realm/ios`)
+  - sensors_plus (from `.symlinks/plugins/sensors_plus/ios`)
+  - share_handler_ios (from `.symlinks/plugins/share_handler_ios/ios`)
+  - share_handler_ios_models (from `.symlinks/plugins/share_handler_ios/ios/Models`)
+  - share_plus (from `.symlinks/plugins/share_plus/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - sqflite (from `.symlinks/plugins/sqflite/darwin`)
+  - tencent_kit (from `.symlinks/plugins/tencent_kit/ios`)
+  - tobias (from `.symlinks/plugins/tobias/ios`)
+  - unrar (from `.symlinks/plugins/unrar/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/darwin`)
+  - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
+  - weibo_kit (from `.symlinks/plugins/weibo_kit/ios`)
+  - Weibo_SDK (= 3.3.0)
+  - wifi_scan (from `.symlinks/plugins/wifi_scan/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AliyunOSSiOS
+    - BIJKPlayer
+    - Bugly
+    - DKImagePickerController
+    - DKPhotoGallery
+    - JCore
+    - JVerification
+    - KeychainAccess
+    - libwebp
+    - Mantle
+    - ReachabilitySwift
+    - SDWebImage
+    - SDWebImageWebPCoder
+    - SwiftyGif
+    - Toast
+    - UnrarKit
+    - UnzipKit
+    - WechatOpenSDK-XCFramework
+    - Weibo_SDK
+
+EXTERNAL SOURCES:
+  app_install_date:
+    :path: ".symlinks/plugins/app_install_date/ios"
+  assets_audio_player:
+    :path: ".symlinks/plugins/assets_audio_player/ios"
+  assets_audio_player_web:
+    :path: ".symlinks/plugins/assets_audio_player_web/ios"
+  auto_orientation:
+    :path: ".symlinks/plugins/auto_orientation/ios"
+  battery_plus:
+    :path: ".symlinks/plugins/battery_plus/ios"
+  camera_avfoundation:
+    :path: ".symlinks/plugins/camera_avfoundation/ios"
+  connectivity_plus:
+    :path: ".symlinks/plugins/connectivity_plus/ios"
+  fijkplayer:
+    :path: ".symlinks/plugins/fijkplayer/ios"
+  file_picker:
+    :path: ".symlinks/plugins/file_picker/ios"
+  file_preview:
+    :path: ".symlinks/plugins/file_preview/ios"
+  fl_market:
+    :path: ".symlinks/plugins/fl_market/ios"
+  Flutter:
+    :path: Flutter
+  flutter_blue_plus_darwin:
+    :path: ".symlinks/plugins/flutter_blue_plus_darwin/darwin"
+  flutter_bugly:
+    :path: ".symlinks/plugins/flutter_bugly/ios"
+  flutter_client_oss:
+    :path: ".symlinks/plugins/flutter_client_oss/ios"
+  flutter_image_compress_common:
+    :path: ".symlinks/plugins/flutter_image_compress_common/ios"
+  flutter_local_notifications:
+    :path: ".symlinks/plugins/flutter_local_notifications/ios"
+  flutter_native_splash:
+    :path: ".symlinks/plugins/flutter_native_splash/ios"
+  flutter_origin_resources:
+    :path: ".symlinks/plugins/flutter_origin_resources/ios"
+  flutter_pdfview:
+    :path: ".symlinks/plugins/flutter_pdfview/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  fluwx:
+    :path: ".symlinks/plugins/fluwx/ios"
+  gp_utils:
+    :path: ".symlinks/plugins/gp_utils/ios"
+  image_gallery_saver:
+    :path: ".symlinks/plugins/image_gallery_saver/ios"
+  in_app_purchase_storekit:
+    :path: ".symlinks/plugins/in_app_purchase_storekit/darwin"
+  jverify:
+    :path: ".symlinks/plugins/jverify/ios"
+  md5_file_checksum:
+    :path: ".symlinks/plugins/md5_file_checksum/ios"
+  open_filex:
+    :path: ".symlinks/plugins/open_filex/ios"
+  package_info:
+    :path: ".symlinks/plugins/package_info/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  photo_gallery:
+    :path: ".symlinks/plugins/photo_gallery/ios"
+  photo_manager:
+    :path: ".symlinks/plugins/photo_manager/ios"
+  r_upgrade:
+    :path: ".symlinks/plugins/r_upgrade/ios"
+  realm:
+    :path: ".symlinks/plugins/realm/ios"
+  sensors_plus:
+    :path: ".symlinks/plugins/sensors_plus/ios"
+  share_handler_ios:
+    :path: ".symlinks/plugins/share_handler_ios/ios"
+  share_handler_ios_models:
+    :path: ".symlinks/plugins/share_handler_ios/ios/Models"
+  share_plus:
+    :path: ".symlinks/plugins/share_plus/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/darwin"
+  tencent_kit:
+    :path: ".symlinks/plugins/tencent_kit/ios"
+  tobias:
+    :path: ".symlinks/plugins/tobias/ios"
+  unrar:
+    :path: ".symlinks/plugins/unrar/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  video_player_avfoundation:
+    :path: ".symlinks/plugins/video_player_avfoundation/darwin"
+  webview_flutter_wkwebview:
+    :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
+  weibo_kit:
+    :path: ".symlinks/plugins/weibo_kit/ios"
+  wifi_scan:
+    :path: ".symlinks/plugins/wifi_scan/ios"
+
+SPEC CHECKSUMS:
+  AliyunOSSiOS: 51e8aa24dda25918e3b5b80d72105a57485b6bf7
+  app_install_date: 8d9e98cd5329ec376d38012a1cb82f37810de359
+  assets_audio_player: edee322b9cb625571b830b35872ead1a295fd917
+  assets_audio_player_web: 19826380c44375761aa0b9053665c1e3fbc3b86b
+  auto_orientation: 102ed811a5938d52c86520ddd7ecd3a126b5d39d
+  battery_plus: 091633b7f01cb33dfc4aeedb450816f4d33818fa
+  BIJKPlayer: 4c5d66e5cb99ae5bade6f22a4fcc031722a81c64
+  Bugly: 217ac2ce5f0f2626d43dbaa4f70764c953a26a31
+  camera_avfoundation: adb0207d868b2d873e895371d88448399ab78d87
+  connectivity_plus: bf0076dd84a130856aa636df1c71ccaff908fa1d
+  DKImagePickerController: 946cec48c7873164274ecc4624d19e3da4c1ef3c
+  DKPhotoGallery: b3834fecb755ee09a593d7c9e389d8b5d6deed60
+  fijkplayer: 8b6d864948dc28e6e07248ed4fce61a7467db4df
+  file_picker: ce3938a0df3cc1ef404671531facef740d03f920
+  file_preview: f1f26bfb9836a41685d3098dccf3ebecd01f85b9
+  fl_market: c6dad6c48f519c13119c4f70ec27219b9ef7593a
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_blue_plus_darwin: 904ed52825285a15f60e9d90312337a09f11a785
+  flutter_bugly: c9800f4d5bc5bdc27ffdde3417a26ba44266e0c3
+  flutter_client_oss: ff8c7bfc3b7f129283764f57bf86a960680222fa
+  flutter_image_compress_common: ec1d45c362c9d30a3f6a0426c297f47c52007e3e
+  flutter_local_notifications: 4cde75091f6327eb8517fa068a0a5950212d2086
+  flutter_native_splash: edf599c81f74d093a4daf8e17bd7a018854bc778
+  flutter_origin_resources: ae839761db1a53a5470e77662dee029939eb9781
+  flutter_pdfview: 2e4d13ffb774858562ffbdfdb61b40744b191adc
+  fluttertoast: 31b00dabfa7fb7bacd9e7dbee580d7a2ff4bf265
+  fluwx: daa284756ce53442b3d0417ceeda66e981906811
+  gp_utils: ae241a4cd60ab283092e9cb184c85c885b4f4318
+  image_gallery_saver: cb43cc43141711190510e92c460eb1655cd343cb
+  in_app_purchase_storekit: a1ce04056e23eecc666b086040239da7619cd783
+  JCore: fcad36c11a5c70518322770db33408c23ff1ba7a
+  JVerification: 524102d86fdbb056348873405d8950bcd634dd28
+  jverify: f00c582d5b2d6aad24e8a25e127b4e6eef2561d9
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
+  Mantle: c5aa8794a29a022dfbbfc9799af95f477a69b62d
+  md5_file_checksum: 2cafda1443902a0f484da20e478dba45d5955318
+  open_filex: 6e26e659846ec990262224a12ef1c528bb4edbe4
+  package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
+  photo_gallery: 9f95e57747cd22c10676ece3660d1ffe6c603ee5
+  photo_manager: 81954a1bf804b6e882d0453b3b6bc7fad7b47d3d
+  r_upgrade: 44d715c61914cce3d01ea225abffe894fd51c114
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
+  realm: faee0aba64a09526dca9df4d25bf69792c8b2f8c
+  SDWebImage: f29024626962457f3470184232766516dee8dfea
+  SDWebImageWebPCoder: e38c0a70396191361d60c092933e22c20d5b1380
+  sensors_plus: 7229095999f30740798f0eeef5cd120357a8f4f2
+  share_handler_ios: 6dd3a4ac5ca0d955274aec712ba0ecdcaf583e7c
+  share_handler_ios_models: fc638c9b4330dc7f082586c92aee9dfa0b87b871
+  share_plus: 8875f4f2500512ea181eef553c3e27dba5135aad
+  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
+  sqflite: 673a0e54cc04b7d6dba8d24fb8095b31c3a99eec
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  tencent_kit: c8bd3bfee65fb61ea26d5e1570b843773bd62352
+  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
+  tobias: cc3bf3abfe6138bbcac1d013b86b8bd872bbf613
+  unrar: e1ab573ae1b9228def40a8fa4d69994723197432
+  UnrarKit: 62f535c7a34ec52d2514b9b148f33dcfa9a9dc39
+  UnzipKit: 40e2c20a4928f0cfde5eb05a1108c08ee3e16bdc
+  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
+  video_player_avfoundation: 7c6c11d8470e1675df7397027218274b6d2360b3
+  webview_flutter_wkwebview: 2a23822e9039b7b1bc52e5add778e5d89ad488d1
+  WechatOpenSDK-XCFramework: 36fb2bea0754266c17184adf4963d7e6ff98b69f
+  weibo_kit: 8064857ffe649258a0e813d94e4690cf4ef4d948
+  Weibo_SDK: 7478846cccb43c4785ba76b214115fb7ec9dc0d4
+  wifi_scan: 6d20b3b4f59bbad1ddcf3e241560f3acd62f6cbe
+
+PODFILE CHECKSUM: f608cd9a5a782fb9ca824ef03b4760278a8db6c0
+
+COCOAPODS: 1.16.2
