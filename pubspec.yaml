@@ -90,6 +90,7 @@ dependencies:
   pointycastle: ^3.7.3
   encrypt: ^5.0.1
   flutter_oss_aliyun: ^6.4.2
+  flutter_spinkit: ^5.2.0  # 或更高版本
   # better_player: ^0.0.83
   # better_player:
   #   git:
