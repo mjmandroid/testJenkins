@@ -28,6 +28,9 @@ subprojects {
             force "androidx.lifecycle:lifecycle-livedata:2.5.1" // 强制所有模块使用 2.5.1
             force "androidx.lifecycle:lifecycle-viewmodel:2.5.1" // 强制所有模块使用 2.5.1
             force "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1" // 强制所有模块使用 2.5.1
+            force "androidx.lifecycle:lifecycle-runtime:2.5.1" // 强制所有模块使用 2.5.1
+//            force "androidx.core:core-ktx:1.6.0" // 强制所有模块使用 2.5.1
+//            force "org.jetbrains.kotlin:kotlin-stdlib:1.6.0" // 强制所有模块使用 2.5.1
         }
     }
 }
