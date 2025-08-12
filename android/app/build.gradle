@@ -122,12 +122,6 @@ android {
 dependencies {
     // 此处以JPush 5.6.0 版本为例，注意：从 5.0.0 版本开始可以自动拉取 JCore 包，无需另外配置
     implementation 'cn.jiguang.sdk:jcore:5.0.0'
-    implementation("androidx.lifecycle:lifecycle-livedata:2.5.1") {
-        force = true  // 强制使用指定版本
-    }
-    implementation "androidx.lifecycle:lifecycle-runtime:2.5.1" // 降级到兼容 1.6.0 的版本
-    implementation "androidx.core:core-ktx:1.6.0"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.0" // 强制指定版本
 }
 flutter {
     source '../..'
