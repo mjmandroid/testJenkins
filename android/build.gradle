@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.8.22'
     repositories {
         maven { url 'https://maven.aliyun.com/repository/public' }  // 阿里云镜像
         maven { url 'https://maven.aliyun.com/repository/google' }  // Google 镜像
@@ -22,18 +22,16 @@ allprojects {
     }
 }
 
-subprojects {
-    configurations.all {
-        resolutionStrategy {
-            force "androidx.lifecycle:lifecycle-livedata:2.5.1" // 强制所有模块使用 2.5.1
-            force "androidx.lifecycle:lifecycle-viewmodel:2.5.1" // 强制所有模块使用 2.5.1
-            force "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1" // 强制所有模块使用 2.5.1
-            force "androidx.lifecycle:lifecycle-runtime:2.5.1" // 强制所有模块使用 2.5.1
-//            force "androidx.core:core-ktx:1.6.0" // 强制所有模块使用 2.5.1
-//            force "org.jetbrains.kotlin:kotlin-stdlib:1.6.0" // 强制所有模块使用 2.5.1
-        }
-    }
-}
+//subprojects {
+//    configurations.all {
+//        resolutionStrategy {
+//            force "androidx.lifecycle:lifecycle-livedata:2.5.1" // 强制所有模块使用 2.5.1
+//            force "androidx.lifecycle:lifecycle-viewmodel:2.5.1" // 强制所有模块使用 2.5.1
+//            force "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1" // 强制所有模块使用 2.5.1
+//            force "androidx.lifecycle:lifecycle-runtime:2.5.1" // 强制所有模块使用 2.5.1
+//        }
+//    }
+//}
 
 rootProject.buildDir = '../build'
 subprojects {
