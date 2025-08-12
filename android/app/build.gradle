@@ -125,6 +125,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata:2.5.1") {
         force = true  // 强制使用指定版本
     }
+    implementation "androidx.lifecycle:lifecycle-runtime:2.5.1" // 降级到兼容 1.6.0 的版本
+    implementation "androidx.core:core-ktx:1.6.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.0" // 强制指定版本
 }
 flutter {
     source '../..'
