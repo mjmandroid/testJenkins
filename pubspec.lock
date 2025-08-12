@@ -101,10 +101,10 @@ packages:
     dependency: "direct main"
     description:
       name: battery_plus
-      sha256: "80c40c9f5763c797f6802797983392e9560eff749a199baeba1229e5aba77ef5"
+      sha256: c9a3ee3122578e647815301b7d803643af73bffa50a9c27a5ff6f257124f8557
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "4.1.0"
+    version: "3.0.6"
   battery_plus_platform_interface:
     dependency: transitive
     description:
