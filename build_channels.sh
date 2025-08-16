@@ -4,7 +4,7 @@
 version=$(grep '^version:' pubspec.yaml | awk '{print $2}')
 
 # 渠道列表
-channels=("huawei" "xiaomi" "oppo" "vivo" "yingyongbao" "wandoujia" "baidu", "oss" "honor")
+channels=("huawei" "xiaomi")
 
 # 打包输出目录
 output_dir="build/apk_channels"
